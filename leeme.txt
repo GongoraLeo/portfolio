@@ -1,0 +1,6 @@
+-Responsive
+-Modificar tamaños de letra. Empezar con letyra pequeña para pantallas pequeñas y aumentar con tamaño de pantallas. O por porcentajes.
+-Colores, elegir paleta y aplicar. Usar variables.
+-Añadir modo oscuro/claro.
+-Animaciones al aparecer los elementos.
+-Dibujo con animación pantalla 1 (cuadricula4). 

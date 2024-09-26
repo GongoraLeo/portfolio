@@ -1,0 +1,122 @@
+:root{
+    --primary-color: #007878;
+    --bg-color: #eee9e5;
+    --bg-second-color: rgb(199, 245, 245);
+    --pm-second-color: #006060;
+    --pm-dark-color: #184848;
+    --secondary-color: #acbe4b;
+    --sc-second-color: #c1ce5f;
+    --sc-light-color: #f0f0d8;
+    --second-color: #1b8798;
+}
+
+body{
+    font-size: 12px;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+a{
+    text-decoration: none;
+    color: var(--pm-second-color);
+}
+a:hover{
+    color: var(--sc-second-color);
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    border: 2px black solid;
+    padding: 1em;
+}
+h1{
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 4em;
+    color: var(--primary-color);
+}
+h2{
+    font-size: 3em;
+    color: var(--pm-second-color);
+}
+h3{
+    color: var(--pm-second-color);
+}
+p{
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+
+}
+#menu {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 1em;
+    align-content: center;
+}
+#menu ul li{
+    display: inline;
+    font-size: 1.5em;
+    padding: 1em;
+}
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: var(--bg-second-color);
+    opacity: 75%;
+  }
+#cuadricula{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#cuadricula h2{
+    font-size: 2em;
+    margin-bottom: 1.3em;
+}
+
+#cuadricula p{
+    font-size: 2.5em;
+    line-height: 1.3em;
+}
+#cuadricula span{
+    color: var(--pm-dark-color);
+}
+.cuadri1 { grid-area: 1 / 1 / 2 / 2; }
+.cuadri2 { grid-area: 1 / 2 / 2 / 3; }
+.cuadri3 { grid-area: 2 / 1 / 3 / 2; }
+.cuadri4 { grid-area: 2 / 2 / 3 / 3; }
+
+#work{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 2em;
+    align-items: center;
+    justify-items: center;
+}
+
+.worki{
+    align-content: center;
+    border: 2px darkorchid solid;
+    border-radius: 7%;
+    height: 50%;
+    width: 70%;
+}
+
+.worki h3{
+    color: darkgoldenrod;
+    font-size: 2em;
+    text-align: center;
+}
