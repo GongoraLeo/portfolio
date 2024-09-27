@@ -1,0 +1,30 @@
+/* Menu de navegación vertical*/
+.nav-vertical{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 70px;
+    height: 170px;
+    background-color: rgb(66,66,66);
+}
+.nav-vertical span{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(233, 61, 61);
+    display: block;
+    border-radius: 2px;
+    position: relative;
+
+    cursor: pointer;
+    transition: transform 0.7s, width 0.5s;
+}
+.nav1{
+    transform: translate(-50%, -25px);
+}
+
+.nav3{
+    transform: translate(-50%, 20px);
+}
+.nav4{
+    transform: translate(-50%, 40px);
+}

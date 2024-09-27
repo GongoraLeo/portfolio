@@ -1,0 +1,85 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    float: right;
+    margin: 2% 3%;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+header{
+    grid-area: 1 / 1 / 2 / 3;
+}
+#sobremi{
+    grid-area: 2 / 1 / 4 / 2;
+    padding: 2em 1em;
+    font-size: 2em;
+}
+#work{
+    grid-area: 2 / 2 / 4 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap:20px;
+    padding: 1em;
+}
+#worki1{
+    background-color: beige;
+    border: 1px red solid;
+    border-radius: 4px;
+}
+#worki2{
+    background-color: beige;
+    border: 1px green solid;
+    border-radius: 4px;
+}
+#worki3{
+    background-color: beige;
+    border: 1px gray solid;
+    border-radius: 4px;
+}
+#worki4{
+    background-color: beige;
+    border: 1px blueviolet solid;
+    border-radius: 4px;
+}
+
+.button{
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgb(66,66,66);
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin-top: 3%;
+    margin-left: 25%;
+    padding: 1%;
+}
+.button:hover{
+    background-color: beige;
+}
+.button:hover a{
+    color: black;
+}
